@@ -3,10 +3,16 @@
 
 header {
 	width: 100%;
-	background: #000;
+	background: #F0F0F0;
 	z-index: 1000;
 	padding: 0;
 	box-shadow: 2px 2px 4px gray;
+}
+
+.logo{
+	width: 100%;
+	max-width: 260px;
+	max-height: 120px;
 }
 
 .headA {
@@ -21,7 +27,7 @@ a {
 .headA p {
 	font-size: 20px;
 	margin: 10px 0;
-	color: #fff;
+	color: #000000;
 }
 
 .headB ul {
@@ -33,7 +39,7 @@ a {
 .headB a {
 	display: block;
 	padding: 8px;
-	color: #fff;
+	color: #000000;
 	font-size: 17px;
 	text-decoration: none;
 	border-bottom: 3px solid none;

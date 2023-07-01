@@ -1,0 +1,20 @@
+.top-screen {
+  display: flex;
+  background-color: #ffffff; /* 左半分の背景色 */
+  color: #000000; /* 右半分のテキスト色 */
+}
+
+.left {
+  flex: 1;
+  padding: 50px;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right {
+  flex: 1;
+  padding: 50px;
+}

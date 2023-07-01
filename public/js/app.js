@@ -2066,12 +2066,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Header */ "./resources/js/components/Header.js");
+/* harmony import */ var _components_TopScreen__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/TopScreen */ "./resources/js/components/TopScreen.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+
 function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_TopScreen__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 }
 react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(App, null), document.getElementById('app'));
 
@@ -2127,6 +2129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/header.css */ "./resources/css/header.css");
+/* harmony import */ var _public_images_SkillBridge_logos_transparent_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/images/SkillBridge-logos_transparent.png */ "./resources/public/images/SkillBridge-logos_transparent.png");
 
  //同階層のCSSを読み込む className="header"
 
@@ -2153,7 +2156,11 @@ function Header() {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
       href: "./",
       "class": "headA"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "rogo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      src: _public_images_SkillBridge_logos_transparent_png__WEBPACK_IMPORTED_MODULE_2__["default"],
+      alt: "\u30ED\u30B4",
+      "class": "logo"
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
       type: "button",
       "class": "headC"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
@@ -2180,6 +2187,79 @@ function Header() {
 
 /***/ }),
 
+/***/ "./resources/js/components/TopScreen.js":
+/*!**********************************************!*\
+  !*** ./resources/js/components/TopScreen.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_TopScreen_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/TopScreen.css */ "./resources/css/TopScreen.css");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module '../path/to/logo.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+
+
+var TopScreen = function TopScreen() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "top-screen"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "left"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: Object(function webpackMissingModule() { var e = new Error("Cannot find module '../path/to/logo.png'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()),
+    alt: "Logo"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "right"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "\u30B5\u30A4\u30C8\u306E\u30BF\u30A4\u30C8\u30EB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u30B5\u30A4\u30C8\u306E\u8AAC\u660E\u3084\u60C5\u5831\u3092\u3053\u3053\u306B\u8A18\u8FF0\u3057\u307E\u3059\u3002")));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopScreen);
+
+/***/ }),
+
+/***/ "./resources/public/images/SkillBridge-logos_transparent.png":
+/*!*******************************************************************!*\
+  !*** ./resources/public/images/SkillBridge-logos_transparent.png ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/SkillBridge-logos_transparent.png?c14b3a1389584abbdf5621b6d840b69b");
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/TopScreen.css":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/TopScreen.css ***!
+  \************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".top-screen {\r\n  display: flex;\r\n  background-color: #ffffff; /* 左半分の背景色 */\r\n  color: #000000; /* 右半分のテキスト色 */\r\n}\r\n\r\n.left {\r\n  flex: 1;\r\n  padding: 50px;\r\n}\r\n\r\n.left img {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.right {\r\n  flex: 1;\r\n  padding: 50px;\r\n}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/header.css":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/header.css ***!
@@ -2197,7 +2277,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* className=\"header\"にスタイルが適用される */\r\n@charset \"utf-8\";\r\n\r\nheader {\r\n\twidth: 100%;\r\n\tbackground: #000;\r\n\tz-index: 1000;\r\n\tpadding: 0;\r\n\tbox-shadow: 2px 2px 4px gray;\r\n}\r\n\r\n.headA {\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.headA p {\r\n\tfont-size: 20px;\r\n\tmargin: 10px 0;\r\n\tcolor: #fff;\r\n}\r\n\r\n.headB ul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.headB a {\r\n\tdisplay: block;\r\n\tpadding: 8px;\r\n\tcolor: #fff;\r\n\tfont-size: 17px;\r\n\ttext-decoration: none;\r\n\tborder-bottom: 3px solid none;\r\n}\r\n\r\n.headB a:hover {\r\n\tmargin-top: -3px;\r\n\tborder-bottom: 3px solid #000;\r\n}\r\n\r\n\r\n\r\n@media(min-width: 1024px) {\r\n\t.container {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tmax-width: 1200px;\r\n\t\tjustify-content: space-between;\r\n\t\tmargin-left: auto;\r\n\t\tmargin-right: auto;\r\n\t}\r\n\r\n\t.headB ul {\r\n\t\tdisplay: flex\r\n\t}\r\n\r\n\t.headC {\r\n\t\tdisplay: none;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: block !important;\r\n\t}\r\n}\r\n\r\n\r\n@media(max-width:1023px) {\r\n\theader .container-small {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tjustify-content: space-between;\r\n\t}\r\n\r\n\t.headC {\r\n\t\tmargin-right: 10px;\r\n\t\tpadding: 0;\r\n\t\tborder: none;\r\n\t\toutline: none;\r\n\t\tbackground: none;\r\n\t\tfont-size: 28px;\r\n\t\topacity: 0.8;\r\n\t\tcursor: pointer;\r\n\t\tcolor: #000;\r\n\t}\r\n\r\n\t.headC:hover {\r\n\t\topacity: 0.3;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: none;\r\n\t}\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* className=\"header\"にスタイルが適用される */\r\n@charset \"utf-8\";\r\n\r\nheader {\r\n\twidth: 100%;\r\n\tbackground: #F0F0F0;\r\n\tz-index: 1000;\r\n\tpadding: 0;\r\n\tbox-shadow: 2px 2px 4px gray;\r\n}\r\n\r\n.logo{\r\n\twidth: 100%;\r\n\tmax-width: 260px;\r\n\tmax-height: 120px;\r\n}\r\n\r\n.headA {\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.headA p {\r\n\tfont-size: 20px;\r\n\tmargin: 10px 0;\r\n\tcolor: #000000;\r\n}\r\n\r\n.headB ul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.headB a {\r\n\tdisplay: block;\r\n\tpadding: 8px;\r\n\tcolor: #000000;\r\n\tfont-size: 17px;\r\n\ttext-decoration: none;\r\n\tborder-bottom: 3px solid none;\r\n}\r\n\r\n.headB a:hover {\r\n\tmargin-top: -3px;\r\n\tborder-bottom: 3px solid #000;\r\n}\r\n\r\n\r\n\r\n@media(min-width: 1024px) {\r\n\t.container {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tmax-width: 1200px;\r\n\t\tjustify-content: space-between;\r\n\t\tmargin-left: auto;\r\n\t\tmargin-right: auto;\r\n\t}\r\n\r\n\t.headB ul {\r\n\t\tdisplay: flex\r\n\t}\r\n\r\n\t.headC {\r\n\t\tdisplay: none;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: block !important;\r\n\t}\r\n}\r\n\r\n\r\n@media(max-width:1023px) {\r\n\theader .container-small {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tjustify-content: space-between;\r\n\t}\r\n\r\n\t.headC {\r\n\t\tmargin-right: 10px;\r\n\t\tpadding: 0;\r\n\t\tborder: none;\r\n\t\toutline: none;\r\n\t\tbackground: none;\r\n\t\tfont-size: 28px;\r\n\t\topacity: 0.8;\r\n\t\tcursor: pointer;\r\n\t\tcolor: #000;\r\n\t}\r\n\r\n\t.headC:hover {\r\n\t\topacity: 0.3;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: none;\r\n\t}\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -53042,6 +53122,36 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler.development.js */ "./node_modules/scheduler/cjs/scheduler.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./resources/css/TopScreen.css":
+/*!*************************************!*\
+  !*** ./resources/css/TopScreen.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_TopScreen_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!../../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./TopScreen.css */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[1].use[2]!./resources/css/TopScreen.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_TopScreen_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_1_node_modules_postcss_loader_dist_cjs_js_ruleSet_1_rules_6_oneOf_1_use_2_TopScreen_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 

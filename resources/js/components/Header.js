@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/header.css'; //同階層のCSSを読み込む className="header"
+import logo from '../../public/images/SkillBridge-logos_transparent.png';
 
 function Header() {
 	//コンポーネント内でスタイルを当てるパターン
@@ -16,7 +17,7 @@ function Header() {
 			<div class="container">
 				<div class="container-small">
 					<a href="./" class="headA">
-						<h1>rogo</h1>
+						<img src={logo} alt="ロゴ" class="logo"/>
 					</a>
 					<button type="button" class="headC">
 						<span class="fa fa-bars" title="MEMU"></span><span class="sr-only">MEMU</span>
