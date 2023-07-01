@@ -1,15 +1,16 @@
-require('./bootstrap');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import TopScreen from './components/TopScreen';
 
 function App() {
-	<div>
-		<Header />
-		<TopScreen />
-		{/* 他のコンポーネントや要素を追加 */}
-	</div>
+  return (
+    <div>
+      <Header />
+      <TopScreen />
+      {/* 他のコンポーネントや要素を追加 */}
+    </div>
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.createRoot(document.getElementById('app')).render(<App />);

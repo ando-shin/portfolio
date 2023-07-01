@@ -1,4 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/images/logo_info.txt": "/images/logo_info.txt",
+    "/images/SkillBridge-logos.jpeg": "/images/SkillBridge-logos.jpeg",
+    "/images/SkillBridge-logos_black.png": "/images/SkillBridge-logos_black.png",
+    "/images/SkillBridge-logos_transparent.png": "/images/SkillBridge-logos_transparent.png",
+    "/images/SkillBridge-logos_white.png": "/images/SkillBridge-logos_white.png"
 }
