@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/TopScreen.css';
 import logo from '../../public/images/SkillBridge-logos_transparent.png';
 
 const TopScreen = () => {

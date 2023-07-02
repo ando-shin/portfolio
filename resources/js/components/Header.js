@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/header.css';
 import logo from '../../public/images/SkillBridge-logos_black_h_adjustment.png';
 
 function Header() {
@@ -18,7 +17,7 @@ function Header() {
         <nav className="headB">
           <ul>
             <li><a href="./">Home</a></li>
-            <li><a href="./">FAQ（サンプル）</a></li>
+            <li><a href="./">FAQ</a></li>
             {/* 他のリンク */}
             <li className="SNS">
               <a href="https://www.instagram.com/yotamatsumaru/">

@@ -1,0 +1,138 @@
+/* className="header"にスタイルが適用される */
+@charset "utf-8";
+/* header */
+header {
+	width: 100%;
+	background: #F0F0F0;
+	z-index: 1000;
+	padding: 0;
+	box-shadow: 2px 2px 4px gray;
+}
+
+.logo{
+	width: 100%;
+	max-width: 120px;
+	max-height: 70px;
+}
+
+.headA {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.headA p {
+	font-size: 20px;
+	margin: 10px 0;
+	color: #000000;
+}
+
+.headB ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.headB a {
+	display: block;
+	padding: 8px;
+	color: #000000;
+	font-size: 17px;
+	text-decoration: none;
+	border-bottom: 3px solid none;
+}
+
+.headB a:hover {
+	margin-top: -3px;
+	border-bottom: 3px solid #000;
+}
+
+
+
+@media(min-width: 1024px) {
+	.container {
+		display: flex;
+		align-items: center;
+		max-width: 1200px;
+		justify-content: space-between;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.headB ul {
+		display: flex
+	}
+
+	.headC {
+		display: none;
+
+	}
+
+	.headB {
+		display: block !important;
+	}
+}
+
+
+@media(max-width:1023px) {
+	header .container-small {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.headC {
+		margin-right: 10px;
+		padding: 0;
+		border: none;
+		outline: none;
+		background: none;
+		font-size: 28px;
+		opacity: 0.8;
+		cursor: pointer;
+		color: #000;
+	}
+
+	.headC:hover {
+		opacity: 0.3;
+
+	}
+
+	.headB {
+		display: none;
+	}
+}
+
+/* TOP */
+.top-screen {
+  display: flex;
+  background-color: #ffffff; /* 左半分の背景色 */
+  color: #000000; /* 右半分のテキスト色 */
+	display: flex;
+}
+
+.left {
+  flex: 1;
+  padding: 50px;
+	justify-content: right;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right {
+	flex: 1;
+	padding: 50px;
+	justify-content: right;
+	background: #000;
+	color: #ffffff;
+}
+
+.right h1 {
+	padding-top: 150px;
+}
