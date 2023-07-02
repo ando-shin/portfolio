@@ -1,13 +1,15 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../../public/images/SkillBridge-logos_black_h_adjustment.png';
 
 function Header() {
+  const location = useLocation();
+
   return (
     <header className="header">
       <div className="container">
         <div className="container-small">
-          <Link to="/" className="headA">
+          <Link to="/" className={`headA ${location.pathname === '/' ? 'active' : ''}`}>
             <img src={logo} alt="ロゴ" className="logo" />
           </Link>
           <button type="button" className="headC">
@@ -18,13 +20,13 @@ function Header() {
         <nav className="headB">
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/login" className={location.pathname === '/login' ? 'active' : ''}>LOGIN</Link>
             </li>
             <li>
-              <Link to="/todo">TODO</Link>
+              <Link to="/todo" className={location.pathname === '/todo' ? 'active' : ''}>TODO</Link>
             </li>
             <li>
-              <Link to="/faq">FAQ</Link>
+              <Link to="/faq" className={location.pathname === '/faq' ? 'active' : ''}>FAQ</Link>
             </li>
           </ul>
         </nav>
