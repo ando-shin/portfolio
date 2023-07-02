@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../css/header.css';
-import logo from '../../public/images/SkillBridge-logos_transparent.png';
+import logo from '../../public/images/SkillBridge-logos_black_h_adjustment.png';
 
 function Header() {
   return (

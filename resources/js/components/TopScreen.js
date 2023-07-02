@@ -9,8 +9,11 @@ const TopScreen = () => {
         <img src={logo} alt="Logo" />
       </div>
       <div className="right">
-        <h1>サイトのタイトル</h1>
-        <p>サイトの説明や情報をここに記述します。</p>
+        <h1>Empowering Your Professional Skill Development</h1>
+        <p>At our site, we provide high-quality content on a wide range of topics to support your skill development journey. </p>
+        <p>Whether you're interested in programming, design, marketing, or business, we offer valuable information and guides </p>
+        <p>to help you enhance your skills. Our carefully curated content from reliable sources aims to support your growth and </p>
+        <p>success. Let's learn together and elevate your skills.</p>
       </div>
     </div>
   );

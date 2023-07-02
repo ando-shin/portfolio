@@ -38,7 +38,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _css_header_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/header.css */ "./resources/css/header.css");
-/* harmony import */ var _public_images_SkillBridge_logos_transparent_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/images/SkillBridge-logos_transparent.png */ "./resources/public/images/SkillBridge-logos_transparent.png");
+/* harmony import */ var _public_images_SkillBridge_logos_black_h_adjustment_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/images/SkillBridge-logos_black_h_adjustment.png */ "./resources/public/images/SkillBridge-logos_black_h_adjustment.png");
 
 
 
@@ -53,7 +53,7 @@ function Header() {
     href: "./",
     className: "headA"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: _public_images_SkillBridge_logos_transparent_png__WEBPACK_IMPORTED_MODULE_2__["default"],
+    src: _public_images_SkillBridge_logos_black_h_adjustment_png__WEBPACK_IMPORTED_MODULE_2__["default"],
     alt: "\u30ED\u30B4",
     className: "logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
@@ -109,9 +109,23 @@ var TopScreen = function TopScreen() {
     alt: "Logo"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "\u30B5\u30A4\u30C8\u306E\u30BF\u30A4\u30C8\u30EB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "\u30B5\u30A4\u30C8\u306E\u8AAC\u660E\u3084\u60C5\u5831\u3092\u3053\u3053\u306B\u8A18\u8FF0\u3057\u307E\u3059\u3002")));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Empowering Your Professional Skill Development"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "At our site, we provide high-quality content on a wide range of topics to support your skill development journey. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Whether you're interested in programming, design, marketing, or business, we offer valuable information and guides "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "to help you enhance your skills. Our carefully curated content from reliable sources aims to support your growth and "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "success. Let's learn together and elevate your skills.")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TopScreen);
+
+/***/ }),
+
+/***/ "./resources/public/images/SkillBridge-logos_black_h_adjustment.png":
+/*!**************************************************************************!*\
+  !*** ./resources/public/images/SkillBridge-logos_black_h_adjustment.png ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/SkillBridge-logos_black_h_adjustment.png?13d5be7cfe2766e7c292061dfa7d32c5");
 
 /***/ }),
 
@@ -145,7 +159,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".top-screen {\r\n  display: flex;\r\n  background-color: #ffffff; /* 左半分の背景色 */\r\n  color: #000000; /* 右半分のテキスト色 */\r\n}\r\n\r\n.left {\r\n  flex: 1;\r\n  padding: 50px;\r\n}\r\n\r\n.left img {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.right {\r\n  flex: 1;\r\n  padding: 50px;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".top-screen {\r\n  display: flex;\r\n  background-color: #ffffff; /* 左半分の背景色 */\r\n  color: #000000; /* 右半分のテキスト色 */\r\n\tdisplay: flex;\r\n}\r\n\r\n.left {\r\n  flex: 1;\r\n  padding: 50px;\r\n\tjustify-content: right;\r\n}\r\n\r\n.left img {\r\n  max-width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.right {\r\n\tflex: 1;\r\n\tpadding: 50px;\r\n\tjustify-content: right;\r\n\tbackground: #000;\r\n\tcolor: #ffffff;\r\n}\r\n\r\n.right h1 {\r\n\tpadding-top: 150px;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -168,7 +182,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* className=\"header\"にスタイルが適用される */\r\n@charset \"utf-8\";\r\n\r\nheader {\r\n\twidth: 100%;\r\n\tbackground: #F0F0F0;\r\n\tz-index: 1000;\r\n\tpadding: 0;\r\n\tbox-shadow: 2px 2px 4px gray;\r\n}\r\n\r\n.logo{\r\n\twidth: 100%;\r\n\tmax-width: 260px;\r\n\tmax-height: 120px;\r\n}\r\n\r\n.headA {\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.headA p {\r\n\tfont-size: 20px;\r\n\tmargin: 10px 0;\r\n\tcolor: #000000;\r\n}\r\n\r\n.headB ul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.headB a {\r\n\tdisplay: block;\r\n\tpadding: 8px;\r\n\tcolor: #000000;\r\n\tfont-size: 17px;\r\n\ttext-decoration: none;\r\n\tborder-bottom: 3px solid none;\r\n}\r\n\r\n.headB a:hover {\r\n\tmargin-top: -3px;\r\n\tborder-bottom: 3px solid #000;\r\n}\r\n\r\n\r\n\r\n@media(min-width: 1024px) {\r\n\t.container {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tmax-width: 1200px;\r\n\t\tjustify-content: space-between;\r\n\t\tmargin-left: auto;\r\n\t\tmargin-right: auto;\r\n\t}\r\n\r\n\t.headB ul {\r\n\t\tdisplay: flex\r\n\t}\r\n\r\n\t.headC {\r\n\t\tdisplay: none;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: block !important;\r\n\t}\r\n}\r\n\r\n\r\n@media(max-width:1023px) {\r\n\theader .container-small {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tjustify-content: space-between;\r\n\t}\r\n\r\n\t.headC {\r\n\t\tmargin-right: 10px;\r\n\t\tpadding: 0;\r\n\t\tborder: none;\r\n\t\toutline: none;\r\n\t\tbackground: none;\r\n\t\tfont-size: 28px;\r\n\t\topacity: 0.8;\r\n\t\tcursor: pointer;\r\n\t\tcolor: #000;\r\n\t}\r\n\r\n\t.headC:hover {\r\n\t\topacity: 0.3;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: none;\r\n\t}\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* className=\"header\"にスタイルが適用される */\r\n@charset \"utf-8\";\r\n\r\nheader {\r\n\twidth: 100%;\r\n\tbackground: #F0F0F0;\r\n\tz-index: 1000;\r\n\tpadding: 0;\r\n\tbox-shadow: 2px 2px 4px gray;\r\n}\r\n\r\n.logo{\r\n\twidth: 100%;\r\n\tmax-width: 120px;\r\n\tmax-height: 70px;\r\n}\r\n\r\n.headA {\r\n\tpadding-left: 10px;\r\n\tpadding-right: 10px;\r\n}\r\n\r\na {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.headA p {\r\n\tfont-size: 20px;\r\n\tmargin: 10px 0;\r\n\tcolor: #000000;\r\n}\r\n\r\n.headB ul {\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n\tlist-style: none;\r\n}\r\n\r\n.headB a {\r\n\tdisplay: block;\r\n\tpadding: 8px;\r\n\tcolor: #000000;\r\n\tfont-size: 17px;\r\n\ttext-decoration: none;\r\n\tborder-bottom: 3px solid none;\r\n}\r\n\r\n.headB a:hover {\r\n\tmargin-top: -3px;\r\n\tborder-bottom: 3px solid #000;\r\n}\r\n\r\n\r\n\r\n@media(min-width: 1024px) {\r\n\t.container {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tmax-width: 1200px;\r\n\t\tjustify-content: space-between;\r\n\t\tmargin-left: auto;\r\n\t\tmargin-right: auto;\r\n\t}\r\n\r\n\t.headB ul {\r\n\t\tdisplay: flex\r\n\t}\r\n\r\n\t.headC {\r\n\t\tdisplay: none;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: block !important;\r\n\t}\r\n}\r\n\r\n\r\n@media(max-width:1023px) {\r\n\theader .container-small {\r\n\t\tdisplay: flex;\r\n\t\talign-items: center;\r\n\t\tjustify-content: space-between;\r\n\t}\r\n\r\n\t.headC {\r\n\t\tmargin-right: 10px;\r\n\t\tpadding: 0;\r\n\t\tborder: none;\r\n\t\toutline: none;\r\n\t\tbackground: none;\r\n\t\tfont-size: 28px;\r\n\t\topacity: 0.8;\r\n\t\tcursor: pointer;\r\n\t\tcolor: #000;\r\n\t}\r\n\r\n\t.headC:hover {\r\n\t\topacity: 0.3;\r\n\r\n\t}\r\n\r\n\t.headB {\r\n\t\tdisplay: none;\r\n\t}\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
