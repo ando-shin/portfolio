@@ -3,7 +3,7 @@ import logo from '../../public/images/SkillBridge-logos_transparent.png';
 
 const TopScreen = () => {
   return (
-    <div className="top-screen">
+    <div className="top-screen" class="top-screen container">
       <div className="left">
         <img src={logo} alt="Logo" />
       </div>

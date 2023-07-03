@@ -1,176 +1,356 @@
 @charset "utf-8";
+/* CSS Reset */
+
+/* リセットCSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5要素のディスプレイ設定 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* リストスタイルのリセット */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 要素の装飾解除 */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* 表組みのレイアウトテーブルのセルに適用 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 画像のリセット */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 html {
-	width: 100%;
-	margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 body {
-	width: 100%;
-	margin: 0;
+  width: 100%;
+  margin: 0;
 }
 
 /* header */
 header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: #F0F0F0;
-	z-index: 1000;
-	padding: 0;
-	box-shadow: 2px 2px 4px gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #F0F0F0;
+  z-index: 1000;
+  padding: 0;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .logo {
-	width: 100%;
-	max-width: 120px;
-	max-height: 70px;
+  width: 100%;
+  max-width: 120px;
+  max-height: 70px;
 }
 
 .headA {
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .headA p {
-	font-size: 20px;
-	margin: 10px 0;
-	color: #000000;
+  font-size: 20px;
+  margin: 10px 0;
+  color: #000000;
 }
 
 .headB ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .headB a {
-	display: block;
-	padding: 8px;
-	color: #000000;
-	font-size: 17px;
-	text-decoration: none;
-	border-bottom: 3px solid none;
+  display: block;
+  padding: 8px;
+  color: #000000;
+  font-size: 17px;
+  text-decoration: none;
+  border-bottom: 3px solid none;
 }
 
 .headB a:hover {
-	margin-top: -3px;
-	border-bottom: 3px solid #000;
+  margin-top: -3px;
+  border-bottom: 3px solid #000;
 }
 
 /* TOP */
 .top-screen {
-	display: flex;
-	background-color: #ffffff;
-	/* 左半分の背景色 */
-	color: #000000;
-	/* 右半分のテキスト色 */
-	display: flex;
+  display: flex;
+  background-color: #ffffff;
+  /* 左半分の背景色 */
+  color: #000000;
+  /* 右半分のテキスト色 */
 }
 
 /* Media Queries */
-@media (max-width: 1023px) {
-	header .container {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-between;
-	}
+@media screen and (max-width: 599px) {
 
-	.headC {
-		margin-right: 10px;
-		padding: 0;
-		border: none;
-		outline: none;
-		background: none;
-		font-size: 28px;
-		opacity: 0.8;
-		cursor: pointer;
-		color: #000;
-	}
+  /* スマートフォン用のスタイル */
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	.headC:hover {
-		opacity: 0.3;
-	}
+  .headC {
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 28px;
+    opacity: 0.8;
+    cursor: pointer;
+    color: #000;
+  }
 
-	.headB {
-		display: none;
-	}
+  .headC:hover {
+    opacity: 0.3;
+  }
 
-	/* TOP */
-	.left,
-	.right {
-		flex: 1;
-		padding: 50px;
-		justify-content: center;
-		text-align: center;
-	}
+  .headB {
+    display: none;
+  }
 
-	.left img {
-		max-width: 100%;
-		height: auto;
-	}
+  /* TOP */
+  .top-screen {
+    flex-direction: column;
+  }
 
-	.right {
-		background: #000;
-		color: #ffffff;
-	}
+  .left,
+  .right {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+  }
 
-	.right h1 {
-		padding-top: 150px;
-	}
+  .left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .right {
+    background: #000;
+    color: #ffffff;
+  }
+
+  .right h1 {
+    padding-top: 150px;
+  }
 }
 
-@media (min-width: 1024px) {
-	header .container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
 
-	.headB ul {
-		display: flex;
-	}
+  /* タブレット用のスタイル */
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	.headC {
-		display: none;
-	}
+  .headB ul {
+    display: flex;
+  }
 
-	.headB {
-		display: block !important;
-	}
+  .headC {
+    display: none;
+  }
 
-	/* TOP */
-	.left {
-		flex: 1;
-		max-width: 50%;
-		justify-content: flex-end;
-		padding-right: 50px;
-	}
+  .headB {
+    display: block !important;
+  }
 
-	.left img {
-		max-width: 100%;
-		height: auto;
-	}
+  /* TOP */
+  .left {
+    flex: 1;
+    max-width: 50%;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
 
-	.right {
-		flex: 1;
-		max-width: 50%;
-		justify-content: flex-end;
-		background: #000;
-		color: #ffffff;
-		padding-left: 50px;
-	}
+  .left img {
+    max-width: 100%;
+    height: auto;
+  }
 
-	.right h1 {
-		padding-top: 150px;
-	}
+  .right {
+    flex: 1;
+    max-width: 50%;
+    justify-content: flex-end;
+    background: #000;
+    color: #ffffff;
+    padding-left: 50px;
+  }
+
+  .right h1 {
+    padding-top: 150px;
+  }
 }
+
+@media screen and (min-width: 1024px) {
+
+  /* デスクトップ用のスタイル */
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .headB ul {
+    display: flex;
+  }
+
+  .headC {
+    display: none;
+  }
+
+  .headB {
+    display: block !important;
+  }
+
+  /* TOP */
+  .top-screen {
+    flex-direction: row;
+  }
+
+  .left {
+    flex: 1;
+    max-width: 50%;
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .left img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .right {
+    flex: 1;
+    max-width: 50%;
+    justify-content: flex-end;
+    background: #000;
+    color: #ffffff;
+    padding-left: 50px;
+  }
+
+  .right h1 {
+    padding-top: 150px;
+  }
+}
+

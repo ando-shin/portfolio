@@ -12,10 +12,10 @@ function Header() {
           <Link to="/" className={`headA ${location.pathname === '/' ? 'active' : ''}`}>
             <img src={logo} alt="ロゴ" className="logo" />
           </Link>
-          <button type="button" className="headC">
+          {/* <button type="button" className="headC">
             <span className="fa fa-bars" title="MEMU"></span>
             <span className="sr-only">MEMU</span>
-          </button>
+          </button> */}
         </div>
         <nav className="headB">
           <ul>
